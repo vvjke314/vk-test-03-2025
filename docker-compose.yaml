@@ -1,0 +1,19 @@
+services:
+  tarantool:
+    image: tarantool/tarantool:latest
+    container_name: tarantool-test
+    ports:
+      - "3301:3301"
+    volumes:
+      - ./tarantool/app:/opt/tarantool/app
+      - ./tarantool/data:/var/lib/tarantool
+      - /tmp/tarantool/run:/var/run/tarantool
+      - ./tarantool/logs:/var/log/tarantool
+    environment:
+      - TT_APP_NAME=app
+      - TT_INSTANCE_NAME=instance001
+      - TRNTLPASS=${TRNTLPASS}
+    user: "${UID}:${GID}"
+    command: tarantool
+    restart: unless-stopped
+    privileged: true

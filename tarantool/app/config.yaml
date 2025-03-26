@@ -1,0 +1,12 @@
+groups:
+  group001:
+    replicasets:
+      replicaset001:
+        instances:
+          instance001:
+            iproto:
+              listen:
+              - uri: '0.0.0.0:3301'
+
+app:
+  file: '/opt/tarantool/app/init.lua'
