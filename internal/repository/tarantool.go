@@ -34,7 +34,7 @@ func (trepo *TnRepository) Init(ctx context.Context, cfg *config.TnRepoConfig, l
 	trepo.logger.Info("establishing connection with tarantool")
 	trepo.config = cfg
 	trepo.dialer = tarantool.NetDialer{
-		Address:  fmt.Sprintf("localhost:%s", trepo.config.Port),
+		Address:  fmt.Sprintf("tarantool:%s", trepo.config.Port),
 		User:     cfg.Username,
 		Password: cfg.Pass,
 	}
