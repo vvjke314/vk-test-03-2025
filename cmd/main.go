@@ -16,16 +16,10 @@ import (
 func main() {
 	// cfg init
 	loader := config.NewLoader()
-	err := loader.Load()
-	if err != nil {
-		log.Fatalf("error while load env vars")
-	}
+	loader.Load()
 
 	// repository config init
 	repoCfg := config.NewTnConfig()
-	if err != nil {
-		log.Fatalf("error while load repo configuration: %v", err)
-	}
 
 	// logger init
 	appLogger, err := logger.NewSimpleLogger("application.log")

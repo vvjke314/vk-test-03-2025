@@ -1,4 +1,20 @@
 services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vk-test-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - tarantool
+    environment:
+      - TARANTOOL_HOST=tarantool
+      - TARANTOOL_PORT=3301
+    restart: unless-stopped
+    networks:
+      - app-network
+
   tarantool:
     image: tarantool/tarantool:latest
     container_name: tarantool-test
@@ -16,3 +32,10 @@ services:
     command: tarantool
     restart: unless-stopped
     privileged: true
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
+    driver: bridge
