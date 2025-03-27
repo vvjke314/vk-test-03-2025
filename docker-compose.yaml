@@ -11,7 +11,6 @@ services:
     environment:
       - TARANTOOL_HOST=tarantool
       - TARANTOOL_PORT=3301
-    restart: unless-stopped
     networks:
       - app-network
 
