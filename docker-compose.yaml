@@ -12,8 +12,7 @@ services:
     environment:
       - TT_APP_NAME=app
       - TT_INSTANCE_NAME=instance001
-      - TRNTLPASS=${TRNTLPASS}
-    user: "${UID}:${GID}"
+      - TT_PASS=${TRNTLPASS}
     command: tarantool
     restart: unless-stopped
     privileged: true

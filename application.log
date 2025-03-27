@@ -1,0 +1,70 @@
+[INFO][2025-03-27] - establishing connection with tarantool
+[INFO][2025-03-27] - tarantool client successfuly initialized
+[INFO][2025-03-27] - connection successfully closed
+[INFO][2025-03-27] - establishing connection with tarantool
+[INFO][2025-03-27] - tarantool client successfuly initialized
+[INFO][2025-03-27] - server is up, on port :8080
+[INFO][2025-03-27] - checking for key (34214) existence
+[INFO][2025-03-27] - key 34214 existence is false
+[INFO][2025-03-27] - inserted value with 34214: {
+        "jsonreal": 1
+    } values
+[INFO][2025-03-27] - checking for key (34321) existence
+[INFO][2025-03-27] - key 34321 existence is false
+[INFO][2025-03-27] - checking for key (34214) existence
+[INFO][2025-03-27] - key 34214 existence is true
+[INFO][2025-03-27] - searching for row with 34214 key
+[INFO][2025-03-27] - successfully got row {34214 {
+        "jsonreal": 1
+    }} with 34214 key
+[INFO][2025-03-27] - checking for key (gkljfd) existence
+[INFO][2025-03-27] - key gkljfd existence is false
+[INFO][2025-03-27] - inserted value with gkljfd: "fdjslfjkasd" values
+[INFO][2025-03-27] - checking for key (gkljfd) existence
+[INFO][2025-03-27] - key gkljfd existence is true
+[INFO][2025-03-27] - establishing connection with tarantool
+[INFO][2025-03-27] - tarantool client successfuly initialized
+[INFO][2025-03-27] - server is up, on port :8080
+[INFO][2025-03-27] - checking for key (gkljfd) existence
+[INFO][2025-03-27] - key gkljfd existence is true
+[INFO][2025-03-27] - establishing connection with tarantool
+[INFO][2025-03-27] - tarantool client successfuly initialized
+[INFO][2025-03-27] - server is up, on port :8080
+[INFO][2025-03-27] - checking for key (gkljfd) existence
+[INFO][2025-03-27] - key gkljfd existence is true
+[INFO][2025-03-27] - establishing connection with tarantool
+[INFO][2025-03-27] - tarantool client successfuly initialized
+[INFO][2025-03-27] - server is up, on port :8080
+[INFO][2025-03-27] - checking for key (gkljfd) existence
+[INFO][2025-03-27] - key gkljfd existence is true
+[INFO][2025-03-27] - checking for key (34214) existence
+[INFO][2025-03-27] - key 34214 existence is true
+[INFO][2025-03-27] - searching for row with 34214 key
+[INFO][2025-03-27] - successfully got row {34214 {
+        "jsonreal": 1
+    }} with 34214 key
+[INFO][2025-03-27] - checking for key (fdsnlkaf) existence
+[INFO][2025-03-27] - key fdsnlkaf existence is false
+[INFO][2025-03-27] - checking for key (34214) existence
+[INFO][2025-03-27] - key 34214 existence is true
+[INFO][2025-03-27] - searching for row with 34214 key
+[INFO][2025-03-27] - successfully got row {34214 {
+        "jsonreal": 1
+    }} with 34214 key
+[INFO][2025-03-27] - checking for key (3421) existence
+[INFO][2025-03-27] - key 3421 existence is false
+[INFO][2025-03-27] - checking for key (34214) existence
+[INFO][2025-03-27] - key 34214 existence is true
+[INFO][2025-03-27] - successfully updated [[34214 {
+        "hello": 12,
+        "bye": 13
+    }]]
+[INFO][2025-03-27] - checking for key (34214) existence
+[INFO][2025-03-27] - key 34214 existence is true
+[INFO][2025-03-27] - deleting row with 34214 key
+[INFO][2025-03-27] - successfully deleted [[34214 {
+        "hello": 12,
+        "bye": 13
+    }]]
+[INFO][2025-03-27] - checking for key (34214) existence
+[INFO][2025-03-27] - key 34214 existence is false
