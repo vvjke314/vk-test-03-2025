@@ -15,7 +15,7 @@ services:
       - app-network
 
   tarantool:
-    image: tarantool/tarantool:latest
+    image: tarantool/tarantool:3.1.0
     container_name: tarantool-test
     ports:
       - "3301:3301"
